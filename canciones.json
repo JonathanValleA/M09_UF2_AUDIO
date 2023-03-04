@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Cancion 1",
+        "artista": "Artista 1",
+        "tiempo": "1:16",
+        "archivo": "audio/1eraMusica.mp3",
+        "imagen": "http://localhost/actividad_audio/img/patito.jpg"
+      },
+      {
+        "nombre": "Cancion 2",
+        "artista": "Artista 2",
+        "tiempo": "5:40",
+        "archivo": "audio/2daMusica.mp3",
+        "imagen": "http://localhost/actividad_audio/img/dharma.jpg"
+      },
+      {
+        "nombre": "Cancion 3",
+        "artista": "Artista 3",
+        "tiempo": "3:20",
+        "archivo": "audio/3eraMusica.mp3",
+        "imagen": "http://localhost/actividad_audio/img/erpnext.jpg"
+      }
+]

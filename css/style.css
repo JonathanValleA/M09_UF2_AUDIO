@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    
+}
+.contenedor {
+    display: grid;
+    justify-content: center;
+    
+}
+
+.player {
+    display: grid;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 10px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(85, 185, 85);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px green;
+}
+.player .imagen {
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 5px;
+}
+.player .border-imagen {
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgba(74, 145, 64, 1);
+    background-color: rgba(74, 145, 64, .4);
+}
+.player .portada {
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.player .animated-images {
+    animation-name: animated-images;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.player .animated-images-pause {
+    animation-play-state: paused;
+}
+
+@keyframes animated-images {
+    from {
+        transform: rotate(0deg)
+    }to {
+        transform: rotate(360deg);
+    }
+}
+
+.player p:nth-child(4) {
+    font-size: 20px;
+    text-align: center;
+}
+.player .audio-container {
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 15px;
+    height: 120px;
+    width: 350px;
+}
+.player i {
+    font-size: 35px;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+
+}
+.player .audio-container i:nth-child(2),
+.player .audio-container i:nth-child(3) {
+    background-color: rgb(31, 30, 30);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.player i:nth-child(3) {
+    display: none;
+}
+
+.player .audio .volumen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.player .audio .volumen i {
+    font-size: 20px;
+    color: #000;
+}
+.player .audio span {
+    font-size: 16px;
+    position: relative;
+    top: -10px;
+    color: #000;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reproductor de Musica</title>
+        <!-- Link para mi archivo style.css y para aplicar iconos a mi reproductor -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- Contenedor de mi Reproductor de Musica -->
+        <div class="contenedor">
+            <!-- Contenedor donde se muestra toda la información del Reproductor -->
+            <div class="player">
+                <!-- Contenedor de la imagen y el borde circular de la imagen -->
+                <div class="imagen">
+                    <div class="border-imagen">
+                        <img id="portada" class="portada" src="patito.jpg" alt="Portada de la canción">
+                    </div>
+                </div>
+                <!-- Información de la canción -->
+                <p id="titulo-cancion"></p>
+                <p id="artista"></p>
+                <p id="tiempo"></p>
+                <!-- Contenedor del audio en general + volumen -->
+                <div class="audio-container">
+                    <!-- Iconos del prev, play, pause y next -->
+                    <i class="bi bi-skip-backward" id="anterior"></i>
+                    
+                    <i class="bi bi-play-fill" id="play"></i>
+                    <i class="bi bi-pause-fill" id="pause"></i>
+                    <i class="bi bi-skip-forward" id="siguiente"></i>
+                    <!-- Contenedor de la barra de volumen del audio -->
+                    <div class="audio">
+                        <!-- Primer contenedor del volumen-->
+                        <div class="volumen">
+                            <i class="bi bi-volume-off-fill"></i>
+                            <input type="range" class="range" id="volumen" min="0" max="100" step="1">
+                            <p></p>
+                            <i class="bi bi-volume-down-fill"></i>
+                        </div>
+                        <!-- Span donde se añadira el valor del volumen que tiene el audio -->
+                        <span class="valor" id="volumen-valor"></span>
+                        <!-- Aplicar el audio para el reproductor-->
+                        <audio id="audio" autoplay>
+                            <source id="mp3_source" type="audio/mp3"/>
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Llamar a mi archivo audio.js -->
+        <script src="audio.js"></script>
+        
+    </body>
+</html>
